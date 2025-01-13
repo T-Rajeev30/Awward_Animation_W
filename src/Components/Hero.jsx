@@ -1,4 +1,6 @@
 import React, { useRef, useState } from 'react'
+import Button from './Button.jsx';
+import { TiLocationArrow } from 'react-icons/ti';
 
 const Hero = () => {
 
@@ -64,18 +66,20 @@ const Hero = () => {
                  onLoadedData={handleVideoLoaded}
                 />
                 <div>
-                    <h1 className='special-font  hero-heading absolute bottom-5 right-5 z-40 text-blue-75'>
+                    <h1 className='special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75'>
                      G<b>a</b>ming    
                     </h1>
                     <div className='absolute left-0 top-0 z-40 size-full ' >
-                        <div className=' mt-25 px-5 sm:px-10 '>
+                        <div className=' mt-24 px-5 sm:px-10 '>
                             <h1 className='special-font hero-heading text-blue-100 '>redefi<b>n</b>e</h1>
-                            <p className='mb-5 max-w-64 font-robert-reqular text-blue-100 '>Enter the Meta game layes <br /> Unleash the Play Economy </p>
+                            <p className='mb-5 max-w-64 font-robert-reqular text-blue-100 '>Enter the Meta game layer <br /> Unleash the Play Economy </p>
+                            <Button id="watch-trailer"  title="Watch Trailer" leftIcon={<TiLocationArrow/>} containerClass="!bg-yellow-300 flex-center gap-1 " />
                         </div>
                     </div>
                 </div>
-
-
+                <h1 className='special-font hero-heading absolute bottom-5 right-5  text-black'>
+                     G<b>a</b>ming    
+                </h1>
             </div>
         </div>
     </div>
