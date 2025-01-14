@@ -7,6 +7,7 @@ const App = () => {
   <>
   <main  className='relative min-h-screen w-screen overflow-x-hidden'>
     <Hero/>
+    <section className='bg-slate-200 min-h-screen w-[100%]'/>
   </main>
   </>
   )
