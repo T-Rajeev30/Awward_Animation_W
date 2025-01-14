@@ -52,6 +52,10 @@ const Hero = () => {
         }
         
     } ,{dependencies: [currentIndex] , revertOnUpdate: true})
+
+    useGSAP(() =>{
+        
+    })
     
 
     const getVideoSrc = (index) => `Videos/hero-${index}.mp4`;
