@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './Components/Hero'
+import About from './Components/About'
 
 
 const App = () => {
@@ -7,7 +8,7 @@ const App = () => {
   <>
   <main  className='relative min-h-screen w-screen overflow-x-hidden'>
     <Hero/>
-    <section className='bg-slate-200 min-h-screen w-[100%]'/>
+    <About/>
   </main>
   </>
   )
