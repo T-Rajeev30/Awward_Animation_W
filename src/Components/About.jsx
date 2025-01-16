@@ -14,6 +14,7 @@ const About = () => {
         scrub: 0.5,
         pin: true,
         pinSpacing: true,
+
       },
     });
     clipAnimation.to(".mask-clip-path", {
