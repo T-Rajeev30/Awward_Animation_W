@@ -103,7 +103,7 @@ const Hero = () => {
               <video
                 ref={nextVideodRef}
                 src={getVideoSrc(upcomingVideoIndex)}
-                // loop
+                loop
                 muted
                 id="current-video"
                 className="size-64 origin-center scale-150 object-cover object-center"
@@ -115,7 +115,7 @@ const Hero = () => {
           <video
             ref={nextVideodRef}
             src={getVideoSrc(currentIndex)}
-            // loop
+            loop
             muted
             id="next-video"
             className="absolute-center invisible absolute z-20 size-64 object-cover object-center "
@@ -125,8 +125,8 @@ const Hero = () => {
             src={getVideoSrc(
               currentIndex === totalVideos - 2 ? 1 : currentIndex
             )}
-            // autoPlay
-            // loop
+            autoPlay
+            loop
             muted
             className="absolute left-0 top-0 size-full object-cover object-center "
             onLoadedData={handleVideoLoaded}
