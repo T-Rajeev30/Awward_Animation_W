@@ -7,7 +7,7 @@ const navItems = ["Nexus", "Valut", "Prologue", "About", "Contact"];
 const Navbar = () => {
   const navContainerRef = useRef(null);
   const audioELementRef = useRef(null);
-  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+  const [isAudioPlaying, setIsAudioPlaying] = useState(true);
   const [isIndicatorActive, setisIndicatorActive] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -90,7 +90,7 @@ const Navbar = () => {
               {[1, 2, 3, 4].map((bar, index) => (
                 <div
                   className={`indicator-line ${
-                    isIndicatorActive ? "active" : ""
+                    !isIndicatorActive ? "active" : ""
                   }`}
                   key={index}
                   style={{ animationDelay: `${bar * 0.1}s` }}
