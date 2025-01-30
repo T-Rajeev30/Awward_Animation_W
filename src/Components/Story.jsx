@@ -58,7 +58,7 @@ const Story = () => {
                   onMouseEnter={handelMouseLeave}
                   onMouseMove={handelMouseMove}
                   ref={frameRef}
-                  src="/public/Img/entrance.webp"
+                  src="Img/entrance.webp"
                   alt="Entrance"
                   className="object-contain"
                 />
